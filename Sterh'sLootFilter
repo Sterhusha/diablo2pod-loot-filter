@@ -402,4 +402,5 @@ ItemDisplay[(ARMOR OR WEAPON) SOCK>0 CLVL<19]: %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[(ARMOR OR WEAPON) CLVL>18]:
 
 //Notification
-NOTIFY-%WHITE%
+ItemDisplay[RUNE>0]: %WHITE%%NAME%%MAP%
+ItemDisplay[RUNE>0]: %WHITE%%NAME%%MAP%%NOTIFY-ITEM%
