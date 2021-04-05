@@ -378,7 +378,7 @@ ItemDisplay[uit (!INF AND !ETH) AND (NMAG OR RW)  (SOCK=0 OR SOCK=4)]: %GRAY%%NA
 
 // SHOW ME THAT UNIQ ITEM IS ETH
 ItemDisplay[UNI AND ETH AND SOCK=0]: %GRAY%ETH %GOLD%%NAME%
-//Show me every  uniq and set item and runewords
+//Show me every uniq and set item and runewords
 ItemDisplay[RW]: %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[(UNI OR SET)]: %NAME%
 //Show me every identified item
@@ -400,3 +400,6 @@ ItemDisplay[(ARMOR OR WEAPON) ETH SOCK>0 CLVL<19]: %GRAY%ETH %NAME% %TAN%[%SOCKE
 ItemDisplay[(ARMOR OR WEAPON) ETH CLVL<19]: %GRAY%ETH %NAME%
 ItemDisplay[(ARMOR OR WEAPON) SOCK>0 CLVL<19]: %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[(ARMOR OR WEAPON) CLVL>18]:
+
+//Notification
+%NOTIFY-*WHITE*%
