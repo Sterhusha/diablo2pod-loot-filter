@@ -20,10 +20,10 @@ ItemDisplay[(ARMOR OR WEAPON) ((MAG OR RARE OR SET OR UNI) AND ETH) SOCK>0]: %NA
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI) SOCK>0]: %NAME% %TAN%[%SOCKETS%]
 
 //Health & Mana Potions
-ItemDisplay[rvl]: %PURPLE%R %WHITE%Full
-ItemDisplay[rvs]: %PURPLE%r %WHITE%Rejuv
-ItemDisplay[hp5]: %RED%!%WHITE%HP
-ItemDisplay[mp5]: %BLUE%!%WHITE%MP
+ItemDisplay[rvl]: %PURPLE%RFull
+ItemDisplay[rvs]: %PURPLE%Rejuv
+ItemDisplay[hp5]: %RED%[%WHITE%HP%RED%]
+ItemDisplay[mp5]: %BLUE%[%WHITE%MP%BLUE%]
 ItemDisplay[hp1 DIFFICULTY=0]: %RED%!%WHITE%minor hp
 ItemDisplay[hp2 DIFFICULTY=0]: %RED%!%WHITE%light hp
 ItemDisplay[hp3 DIFFICULTY=0]: %RED%!%WHITE%healing
@@ -36,8 +36,8 @@ ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) DIFFICULTY>0]:
 ItemDisplay[(hp4 OR mp4) DIFFICULTY>1]:
 
 //Utilites
-ItemDisplay[tsc]: %BLUE%°%WHITE%TP
-ItemDisplay[isc]: %RED%°%WHITE%ID
+ItemDisplay[tsc]: %BLUE%TP
+ItemDisplay[isc]: %RED%ID
 ItemDisplay[vps CLVL<41]: %GREEN%!%WHITE%Stamina
 ItemDisplay[vps CLVL>40]:
 ItemDisplay[wms CLVL<61]: %GREEN%!%WHITE%Thaw
@@ -69,32 +69,32 @@ ItemDisplay[leg]: %NAME%
 //Runes
 ItemDisplay[r01 OR r02 OR r03 OR r07 OR r10 OR r14 OR r16 OR r17]: %ORANGE%%RUNENAME% %GRAY%[%RUNENUM%]%NOTIFY-ITEM%
 ItemDisplay[r04 OR r05 OR r06 OR r08 OR r09 OR r11 OR r12 OR r13 OR r15]: %ORANGE%%RUNENAME% %TAN%[%RUNENUM%]%NOTIFY-ITEM%
-ItemDisplay[r18 OR r19]: %ORANGE%  %RUNENAME% %WHITE%[%RUNENUM%]  %ORANGE% %NOTIFY-ITEM%
-ItemDisplay[r20 OR r21 OR r22 OR r23]: %RED%» %PURPLE%» %ORANGE%  %RUNENAME% %GOLD%[%RUNENUM%]  %PURPLE% «%RED% «%NOTIFY-ITEM%
-ItemDisplay[r24 OR r25]: %RED%[%RUNENUM%] %PURPLE%»»» %ORANGE%  %RUNENAME% %GOLD%[%RUNENUM%]    %PURPLE%«««%RED% [%RUNENUM%]%NOTIFY-ITEM%
-ItemDisplay[r26 OR r27 OR r32]: %RED%[%RUNENUM%] %PURPLE%»»» %ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE% ««« %GREEN%[%RUNENUM%]%NOTIFY-ITEM%
-ItemDisplay[r28 OR r29 OR r33]: %RED%[%RUNENUM%] %PURPLE%»»»»» %ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE% ««««« %GREEN%[%RUNENUM%]%NOTIFY-ITEM%
-ItemDisplay[r30 OR r31]: %RED%[%RUNENUM%] %PURPLE%»»»»»» %ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE% ««««««%GREEN%[%RUNENUM%]%NOTIFY-ITEM%
+ItemDisplay[r18 OR r19]: %ORANGE% %RUNENAME% %WHITE%[%RUNENUM%]%ORANGE% %NOTIFY-ITEM%
+ItemDisplay[r20 OR r21 OR r22 OR r23]: %RED%» %PURPLE%» %ORANGE%%RUNENAME%%GOLD%[%RUNENUM%]%PURPLE%«%RED%«%NOTIFY-ITEM%
+ItemDisplay[r24 OR r25]: %RED%[%RUNENUM%] %PURPLE%»»»%ORANGE%%RUNENAME%%GOLD%[%RUNENUM%]%PURPLE%«««%RED%[%RUNENUM%]%NOTIFY-ITEM%
+ItemDisplay[r26 OR r27 OR r32]: %RED%[%RUNENUM%] %PURPLE%»»»%ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE%«««%GREEN%[%RUNENUM%]%NOTIFY-ITEM%
+ItemDisplay[r28 OR r29 OR r33]: %RED%[%RUNENUM%] %PURPLE%»»»%ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE%«««%GREEN%[%RUNENUM%]%NOTIFY-ITEM%
+ItemDisplay[r30 OR r31]: %RED%[%RUNENUM%] %PURPLE%»»»%ORANGE%%RUNENAME% %GOLD%[%RUNENUM%]%PURPLE%«««%GREEN%[%RUNENUM%]%NOTIFY-ITEM%
 
 //Gems
 ItemDisplay[(gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf) DIFFICULTY>0]:
 ItemDisplay[(gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku) DIFFICULTY>1]:
 ItemDisplay[(gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc) CLVL<19]: %NAME%
 ItemDisplay[(gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc)]:
-ItemDisplay[gzv]: %WHITE%Amethyst %ORANGE%[%PURPLE%O%ORANGE%]
-ItemDisplay[glw]: %WHITE%Diamond %ORANGE%[%WHITE%O%ORANGE%]
-ItemDisplay[glg]: %WHITE%Emerald %ORANGE%[%GREEN%O%ORANGE%]
-ItemDisplay[glr]: %WHITE%Ruby %ORANGE%[%RED%O%ORANGE%]
-ItemDisplay[glb]: %WHITE%Sapphire %ORANGE%[%BLUE%O%ORANGE%]
-ItemDisplay[gly]: %WHITE%Topaz %ORANGE%[%YELLOW%O%ORANGE%]
-ItemDisplay[skl]: %WHITE%Skull %ORANGE%[%GRAY%O%ORANGE%]
-ItemDisplay[gpv]: %ORANGE%P %WHITE%Amethyst %ORANGE%
-ItemDisplay[gpw]: %ORANGE%P %WHITE%Diamond %ORANGE%
-ItemDisplay[gpg]: %ORANGE%P %WHITE%Emerald %ORANGE%
-ItemDisplay[gpr]: %ORANGE%P %WHITE%Ruby %ORANGE%
-ItemDisplay[gpb]: %ORANGE%P %WHITE%Sapphire %ORANGE%
-ItemDisplay[gpy]: %ORANGE%P %WHITE%Topaz %ORANGE%
-ItemDisplay[skz]: %ORANGE%P %WHITE%Skull %ORANGE%
+ItemDisplay[gzv]: %ORANGE%F.Amethyst %ORANGE%[%PURPLE%O%ORANGE%]
+ItemDisplay[glw]: %ORANGE%F.Diamond %ORANGE%[%WHITE%O%ORANGE%]
+ItemDisplay[glg]: %ORANGE%F.Emerald %ORANGE%[%GREEN%O%ORANGE%]
+ItemDisplay[glr]: %ORANGE%F.Ruby %ORANGE%[%RED%O%ORANGE%]
+ItemDisplay[glb]: %ORANGE%F.Sapphire %ORANGE%[%BLUE%O%ORANGE%]
+ItemDisplay[gly]: %ORANGE%F.Topaz %ORANGE%[%YELLOW%O%ORANGE%]
+ItemDisplay[skl]: %ORANGE%F.Skull %ORANGE%[%GRAY%O%ORANGE%]
+ItemDisplay[gpv]: %ORANGE%P.%WHITE%Amethyst %ORANGE%
+ItemDisplay[gpw]: %ORANGE%P.%WHITE%Diamond %ORANGE%
+ItemDisplay[gpg]: %ORANGE%P.%WHITE%Emerald %ORANGE%
+ItemDisplay[gpr]: %ORANGE%P.%WHITE%Ruby %ORANGE%
+ItemDisplay[gpb]: %ORANGE%P.%WHITE%Sapphire %ORANGE%
+ItemDisplay[gpy]: %ORANGE%P.%WHITE%Topaz %ORANGE%
+ItemDisplay[skz]: %ORANGE%P.%WHITE%Skull %ORANGE%
 
 //Arrows and Bolts
 ItemDisplay[aqv CLVL>12]:
